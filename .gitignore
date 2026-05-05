@@ -1,0 +1,17 @@
+# Arquivos gerados pelo MkDocs
+site/
+
+# Ambiente virtual (se você criar depois)
+venv/
+.env/
+
+# Arquivos do sistema (Windows)
+Thumbs.db
+desktop.ini
+
+# VS Code (opcional)
+.vscode/
+
+# Python
+__pycache__/
+*.pyc
