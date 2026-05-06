@@ -4,10 +4,13 @@ theme:
   name: material
 
 nav:
-  - Início: index.md
-  - Arquitetura: arquitetura.md
+  - Início (Versão Dez/2025): index.md
+  - Arquitetura (Versão Dez/2025): arquitetura.md
   - Módulos: modulos.md
   - API: api.md
   - Banco de Dados: banco.md
   - Troubleshooting: troubleshooting.md
-  - Como Contribuir: contribuicao.md
+  - Como Contribuir (versão Mai/2026): contribuicao.md
+
+markdown_extensions:
+  - footnotes
