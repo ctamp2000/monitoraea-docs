@@ -1,0 +1,1030 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../modulos/">
+      
+      
+        <link rel="next" href="../governanca/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Fluxos (Versão Dez/2025) - MonitoraEA</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#fluxos" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="MonitoraEA" class="md-header__button md-logo" aria-label="MonitoraEA" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            MonitoraEA
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Fluxos (Versão Dez/2025)
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="MonitoraEA" class="md-nav__button md-logo" aria-label="MonitoraEA" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    MonitoraEA
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Início (Versão Dez/2025)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../arquitetura/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Arquitetura (Versão Dez/2025)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modulos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Módulos (Versão Dez/2025)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fluxos (Versão Dez/2025)
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fluxos (Versão Dez/2025)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#fluxos-operacionais-e-casos-de-uso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📌 FLUXOS OPERACIONAIS E CASOS DE USO
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📌 FLUXOS OPERACIONAIS E CASOS DE USO">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#casos-tipicos-de-uso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        👉 Casos Típicos de Uso
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fluxos-operacionais-detalhados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        👉 Fluxos Operacionais Detalhados
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="👉 Fluxos Operacionais Detalhados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fluxo-de-cadastro-de-iniciativas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        👉 Fluxo de cadastro de iniciativas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fluxo-de-autoavaliacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        👉 Fluxo de Autoavaliação
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fluxo-de-abrangencia-geografica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        👉 Fluxo de Abrangência Geográfica
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fluxo-de-identificacao-de-conexoes-e-parcerias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        👉 Fluxo de Identificação de conexões e parcerias
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fluxo-de-mapeamento-de-marcos-e-eventos-do-ciclo-de-vida-da-iniciativa-linha-do-tempo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        👉 Fluxo de mapeamento de marcos e eventos do ciclo de vida da iniciativa (linha do tempo)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../governanca/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Governança (Versão Dez/2025)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    API
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../banco/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Banco de Dados
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Troubleshooting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../contribuicao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Como Contribuir (versão Mai/2026)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#fluxos-operacionais-e-casos-de-uso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📌 FLUXOS OPERACIONAIS E CASOS DE USO
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📌 FLUXOS OPERACIONAIS E CASOS DE USO">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#casos-tipicos-de-uso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        👉 Casos Típicos de Uso
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fluxos-operacionais-detalhados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        👉 Fluxos Operacionais Detalhados
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="👉 Fluxos Operacionais Detalhados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fluxo-de-cadastro-de-iniciativas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        👉 Fluxo de cadastro de iniciativas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fluxo-de-autoavaliacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        👉 Fluxo de Autoavaliação
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fluxo-de-abrangencia-geografica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        👉 Fluxo de Abrangência Geográfica
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fluxo-de-identificacao-de-conexoes-e-parcerias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        👉 Fluxo de Identificação de conexões e parcerias
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fluxo-de-mapeamento-de-marcos-e-eventos-do-ciclo-de-vida-da-iniciativa-linha-do-tempo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        👉 Fluxo de mapeamento de marcos e eventos do ciclo de vida da iniciativa (linha do tempo)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="fluxos">Fluxos</h1>
+<h2 id="fluxos-operacionais-e-casos-de-uso">📌 FLUXOS OPERACIONAIS E CASOS DE USO</h2>
+<h3 id="casos-tipicos-de-uso">👉 Casos Típicos de Uso</h3>
+<p>A Figura 9 ilustra os principais fluxos de interação do Sistema MonitoraEA, organizados entre a área pública (não logada) e o ambiente autenticado (logado), que correspondem a diferentes perfis e níveis de uso da plataforma.</p>
+<p>Na área pública, acessível sem necessidade de autenticação, os usuários podem explorar mapas interativos que reúnem as iniciativas cadastradas, organizadas em cinco perspectivas de monitoramento e avaliação (M&amp;A):</p>
+<ul>
+<li>Iniciativas governamentais de EA;</li>
+<li>Iniciativas não governamentais de EA;</li>
+<li>Iniciativas vinculadas à implementação do Projeto Político-Pedagógico da Zona Costeira e Marinha (PPPZCM);</li>
+<li>Colegiados de Políticas Públicas de EA;</li>
+<li>Centros de Educação e Cooperação Socioambiental.</li>
+</ul>
+<p><img alt="Figura 9 - " src="../img/figura9.png" /></p>
+<p><strong>Figura 9 - Exemplos de funcionalidades da plataforma MonitoraEA (Oliveira, et al., 2025)</strong></p>
+<p>Por meio dessa interface, é possível consultar informações detalhadas sobre cada ação, aplicar filtros temáticos e territoriais (Figura 9C) e solicitar participação em comunidades vinculadas (Figura 9B). Essas funcionalidades fortalecem a transparência e a articulação entre iniciativas de diferentes naturezas e regiões.</p>
+<p>No ambiente autenticado, a plataforma amplia suas funcionalidades, permitindo o cadastro de iniciativas, a formação de redes colaborativas e o uso de instrumentos de autoavaliação baseados em critérios definidos coletivamente pelas comunidades de prática (Figura 9D). Usuários com perfil de gestão têm acesso a painéis de acompanhamento e análise (Figuras 9E – 9F), que consolidam informações e indicadores, apoiando o monitoramento, a avaliação e o planejamento estratégico das políticas e práticas de EA. O quadro 10 apresenta casos típicos de uso que sintetizam fluxos operacionais recorrentes no sistema.</p>
+<p><strong>Quadro 10 – Matriz de funcionalidades por casos típicos de uso.</strong></p>
+<table>
+<thead>
+<tr>
+<th>Caso</th>
+<th>Ator principal</th>
+<th>Objetivo</th>
+<th>Funcionalidades utilizadas</th>
+<th>Produto / Resultado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Exploração pública de iniciativas</td>
+<td>Público Geral (cidadão, estudante ou educador ambiental)</td>
+<td>Consultar iniciativas de EA em determinado território</td>
+<td>Visualização pública; filtros geográficos e temáticos</td>
+<td>Mapa interativo com registros e informações detalhadas sobre iniciativas</td>
+</tr>
+<tr>
+<td>Cadastro de nova iniciativa</td>
+<td>Educador ambiental instituição realizadora de iniciativas de EA</td>
+<td>Registrar uma iniciativa de EA com georreferenciamento de área de abrangência geográfica</td>
+<td>Módulo de cadastro; vinculação a comunidades</td>
+<td>Registro validado e publicado na base nacional</td>
+</tr>
+<tr>
+<td>Autoavaliação de iniciativas</td>
+<td>Comunidades formadas por instituições governamentais ou não governamentais</td>
+<td>Avaliar práticas e políticas de EA sob sua responsabilidade</td>
+<td>Módulo de autoavaliação; painel de indicadores; exportação de relatórios</td>
+<td>Relatório automático de desempenho e indicadores de gestão (em desenvolvimento)</td>
+</tr>
+<tr>
+<td>Diagnóstico territorial</td>
+<td>Articuladores locais, ANPPEA, Universidade, ONGs, OG-PNEA e colegiados</td>
+<td>Sistematizar e analisar dados sobre EA em determinado território</td>
+<td>Dashboards e filtros analíticos; exportação de dados</td>
+<td>Relatório territorial e mapa temático de iniciativas (em desenvolvimento)</td>
+</tr>
+<tr>
+<td>Análise e modelagem de redes <sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></td>
+<td>Equipe técnica, pesquisadores, gestores públicos, ANPPEA e OG-PNEA</td>
+<td>Mapear relações entre atores e instituições, identificando padrões de cooperação</td>
+<td>Módulo de análise e modelagem de redes (em projeto)</td>
+<td>Protótipo de visualização de redes e relatório de conectividade territorial</td>
+</tr>
+</tbody>
+</table>
+<h3 id="fluxos-operacionais-detalhados">👉 Fluxos Operacionais Detalhados</h3>
+<h4 id="fluxo-de-cadastro-de-iniciativas">👉 Fluxo de cadastro de iniciativas</h4>
+<p>O Fluxo de Cadastro de Iniciativas descreve o processo pelo qual atores responsáveis por ações de Educação Ambiental estruturam seu registro no MonitoraEA, desde o acesso inicial ao sistema até a submissão final para validação. O procedimento integra etapas de autenticação, definição da comunidade responsável, coleta de dados descritivos, georreferenciamento e revisão final, combinando interações do usuário com rotinas automatizadas de verificação e consolidação de informações para compor a base nacional de iniciativas.</p>
+<h4 id="fluxo-de-autoavaliacao">👉 Fluxo de Autoavaliação</h4>
+<p>O Fluxo de Autoavaliação corresponde ao detalhamento do passo 6 do quadro 11. Ele especifica as etapas pelas quais uma iniciativa de Educação Ambiental registra, analisa e organiza informações sobre seu próprio desempenho a partir dos instrumentos disponibilizados pelo MonitoraEA. O processo combina coleta estruturada de evidências, aplicação de critérios avaliativos, análise comparativa e geração de insumos para melhoria contínua, articulando tanto operações automatizadas do sistema quanto procedimentos ainda dependentes de execução manual pelas equipes responsáveis.</p>
+<p><strong>Quadro 11 – Etapas do processo de cadastro de iniciativas.</strong></p>
+<table>
+<thead>
+<tr>
+<th>Etapa</th>
+<th>Objetivo</th>
+<th>Ações do Usuário</th>
+<th>Processamentos do Sistema</th>
+<th>Resultado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Passo 1 -</strong> Acesso e Autenticação</td>
+<td>Garantir entrada segura no sistema</td>
+<td>Acessa o portal; faz login ou cria conta</td>
+<td>Valida credenciais e permissões</td>
+<td>Acesso autorizado à área autenticada</td>
+</tr>
+<tr>
+<td><strong>Passo 2 -</strong> Seleção da Perspectiva de M&amp;A</td>
+<td>Definir o modelo de cadastro adequado</td>
+<td>Seleciona a perspectiva aplicável</td>
+<td>Carrega formulário específico; exibe instruções</td>
+<td>Formulário contextualizado habilitado</td>
+</tr>
+<tr>
+<td><strong>Passo 3 -</strong> Criação da Comunidade</td>
+<td>Definir o grupo responsável pelo acompanhamento da iniciativa</td>
+<td>Cria a comunidade vinculada à iniciativa; convida e aprova membros; define missão e regras internas</td>
+<td>Criação de entidade comunitária no banco; envio de convites; gestão de pedidos/ aprovações; atribuição inicial de permissões</td>
+<td>Comunidade criada e vinculada (em estado pendente/ativa)</td>
+</tr>
+<tr>
+<td><strong>Passo 4 -</strong> Preenchimento de Dados Cadastrais</td>
+<td>Registrar informações gerais da iniciativa</td>
+<td>Preenche dados básicos; escolhe categorias/tags; faz upload</td>
+<td>Validação automática de campos e formatos</td>
+<td>Dados cadastrais completos e consistentes</td>
+</tr>
+<tr>
+<td><strong>Passo 5 -</strong> Localização geográfica da área de abrangência</td>
+<td>Registrar a localização ou área de atuação</td>
+<td>Delimita área no WebGIS; confirma localização</td>
+<td>Sobrepõe camadas; armazena coordenadas e metadados</td>
+<td>Feição geográfica registrada</td>
+</tr>
+<tr>
+<td><strong>Passo 6 -</strong> Autoavaliação colaborativa por meio de indicadores</td>
+<td>Registrar o desempenho da iniciativa com base nos indicadores definidos para cada Perspectiva de M&amp;A</td>
+<td>Preenche os indicadores; consulta orientações; revisa respostas; interage com outros membros para ajustes</td>
+<td>Valida respostas; calcula as métricas de perfomance; gera sínteses automáticas; registra histórico de versões</td>
+<td>Autoavaliação registrada, consistente e vinculada à comunidade</td>
+</tr>
+<tr>
+<td><strong>Passo 7 -</strong> Declaração da rede de conexões e parcerias</td>
+<td>Mapear relações institucionais e operacionais relevantes à iniciativa</td>
+<td>Declara instituições parceiras; classifica tipos de vínculo; descreve contribuições</td>
+<td>Valida entidades; cruza dados com cadastros existentes; atualiza grafo de conexões<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup></td>
+<td>Rede de parcerias registrada e integrada à estrutura relacional do sistema</td>
+</tr>
+<tr>
+<td><strong>Passo 8 -</strong> Informação de marcos e eventos relevantes à iniciativa (linha do tempo)</td>
+<td>Registrar fatos estruturantes e eventos significativos ao longo da execução da iniciativa</td>
+<td>Inclui datas; descreve marcos; anexa imagens e links considerados úteis</td>
+<td>Armazena eventos; ordena cronologicamente; associa conteúdos à comunidade</td>
+<td>Linha do tempo criada e vinculada ao histórico evolutivo da iniciativa</td>
+</tr>
+<tr>
+<td><strong>Passo 9 -</strong> Revisão e Publicação</td>
+<td>Finalizar e formalizar o cadastro</td>
+<td>Revisa dados e submete o registro</td>
+<td>Executa validações finais; gera número de registro</td>
+<td>Iniciativa registrada e confirmada pelo sistema<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Quadro 12 – Etapas do processo de autoavaliação.</strong></p>
+<table>
+  <tr>
+    <th>Etapa</th>
+    <th>Objetivo</th>
+    <th>Atividades Principais</th>
+    <th>Produto / Resultado</th>
+  </tr>
+  <tr>
+    <td><strong>Passo 1 - </strong><br>Acesso ao Módulo de Autoavaliação</td>
+    <td>Iniciar o processo de avaliação da iniciativa</td>
+    <td>
+       <ul style="margin:0; padding-left:18px;">
+         <li>Navegação até a iniciativa</li>
+         <li>Acesso à aba de autoavaliação (indicadores)</li>
+         <li>Compreensão do conjunto de indicadores e dinâmica de uso</li>
+       </ul>
+    </td>
+    <td>Processo iniciado com compreensão dos critérios e escopo da avaliação</td>
+  </tr>
+  <tr>
+    <td><strong>Passo 2 - </strong><br>Aplicação dos Instrumentos (indicadores)</td>
+    <td>Registrar respostas e evidências para cada dimensão avaliada</td>
+    <td>
+       <ul style="margin:0; padding-left:18px;">
+         <li>Respostas aos questionários;</li>
+         <li>Registro de evidências e justificativas</li>
+       </ul>
+    </td>
+    <td>Base de dados avaliada e evidências documentadas</td>
+  </tr>
+  <tr>
+    <td><strong>Passo 3 - </strong><br>Análise de Resultados<sup>4</sup></td>
+    <td>Examinar o desempenho obtido e identificar padrões</td>
+    <td>
+       <ul style="margin:0; padding-left:18px;">
+         <li>Visualização dos resultados parciais;</li>
+         <li>Comparação histórica;</li>
+         <li>Identificação de pontos fortes e melhorias</li>
+       </ul>
+    </td>
+    <td>Diagnóstico preliminar do desempenho da iniciativa</td>
+  </tr>
+  <tr>
+    <td><strong>Passo 4 - </strong><br>Elaboração de Plano de Ação<sup>5</sup></td>
+    <td>Estruturar ações de melhoria fundamentadas nos resultados</td>
+    <td>
+       <ul style="margin:0; padding-left:18px;">
+         <li>Definição de ações prioritárias;</li>
+         <li>Estabelecimento de prazos e responsáveis;</li>
+         <li>Identificação de recursos necessários</li>
+       </ul>
+    </td>
+    <td>Plano de ação estruturado, alinhado ao diagnóstico</td>
+  </tr>
+  <tr>
+    <td><strong>Passo 5 - </strong><br>Compartilhamento e Discussão</td>
+    <td>Promover validação coletiva e engajamento comunitário</td>
+    <td>
+       <ul style="margin:0; padding-left:18px;">
+         <li>Compartilhamento dos resultados;</li>
+         <li>Discussão colaborativa;</li>
+         <li>Incorporação de contribuições externas</li>
+       </ul>
+    </td>
+    <td>Avaliação consolidada e enriquecida pela colaboração</td>
+  </tr>
+
+</table>
+
+<h4 id="fluxo-de-abrangencia-geografica">👉 Fluxo de Abrangência Geográfica</h4>
+<p>Este tópico apresenta o detalhamento do passo 5 do quadro 11. A definição da abrangência geográfica consiste na delimitação da área efetiva de atuação da iniciativa, assegurando que seu registro no sistema represente de forma fidedigna o território impactado. O processo inicia-se com a escolha ou construção do polígono que melhor expressa essa área, por meio de ferramentas WebGIS que permitem ao usuário desenhar diretamente no mapa, selecionar limites territoriais a partir de camadas de referência (como municípios, estados, biomas ou bacias hidrográficas) ou realizar o upload de arquivos espaciais contendo geometrias previamente elaboradas.</p>
+<p>Após essa etapa, o sistema executa a verificação técnica das geometrias, assegurando consistência topológica e compatibilidade com os padrões espaciais adotados pela plataforma. Quando múltiplos polígonos são fornecidos, o sistema aplica procedimentos automáticos de merge para consolidá-los em uma única geometria de referência. Concluídas essas validações, o usuário confirma o resultado e a abrangência geográfica é registrada de forma definitiva como parte do cadastro da iniciativa.</p>
+<h4 id="fluxo-de-identificacao-de-conexoes-e-parcerias">👉 Fluxo de Identificação de conexões e parcerias</h4>
+<p>Este tópico apresenta o detalhamento do passo 7 do quadro 11. O Fluxo de Identificação de Conexões e Parcerias descreve o processo pelo qual o responsável pela iniciativa declara vínculos institucionais e relacionais relevantes, incluindo conexões com políticas públicas, apoios recebidos de outras instituições e apoios oferecidos a outras iniciativas. O procedimento combina a seleção de opções pré-definidas, a indicação ordenada dos atores envolvidos e a classificação da natureza das relações, permitindo ao sistema estruturar redes de cooperação e dependência institucional para análise posterior.</p>
+<p>O fluxo inicia-se com a verificação de eventuais conexões da iniciativa com políticas públicas de Educação Ambiental, onde o usuário seleciona se há relação direta e, em caso positivo, identifica até cinco políticas em ordem de relevância, classificando cada vínculo conforme sua natureza. Em seguida, o usuário informa se a iniciativa recebe apoio de outras instituições, selecionando “sim” ou “não” e, quando aplicável, listando as organizações envolvidas também em ordem de relevância, incluindo para cada uma o tipo de relação estabelecida.</p>
+<p>O terceiro passo corresponde à identificação das situações em que a iniciativa apoia ou presta algum tipo de suporte a outras ações ou projetos. Assim como nas etapas anteriores, o usuário indica se existe esse vínculo e, quando existente, descreve até cinco iniciativas apoiadas, especificando a natureza de cada relação. Durante todo o fluxo, o sistema realiza validações básicas, garante a consistência dos dados preenchidos, e armazena as relações declaradas em modelo estruturado, integrando-as automaticamente aos módulos analíticos e de rede.</p>
+<h4 id="fluxo-de-mapeamento-de-marcos-e-eventos-do-ciclo-de-vida-da-iniciativa-linha-do-tempo">👉 Fluxo de mapeamento de marcos e eventos do ciclo de vida da iniciativa (linha do tempo)</h4>
+<p>Este tópico apresenta o detalhamento do passo 8 do quadro 11. O Fluxo de Mapeamento de Marcos e Eventos (linha do tempo) organiza o processo pelo qual o responsável pela iniciativa registra, de forma estruturada, acontecimentos relevantes ao longo do ciclo de vida da ação. A ferramenta permite inserir eventos marcados por mês e ano, relacionar imagens ilustrativas e textos descritivos, garantindo sua apresentação automática em ordem cronológica. A funcionalidade apoia tanto a documentação histórica da iniciativa quanto análises temporais de engajamento, evolução institucional e implementação das atividades.</p>
+<p>O fluxo inicia-se com a apresentação da interface de Linha do Tempo, acompanhada de orientações gerais sobre seu uso e exemplos de marcos relevantes, como criação da iniciativa, eventos públicos, oficinas, reuniões estratégicas, publicações e materiais produzidos. O usuário seleciona o mês e ano do marco que deseja registrar e, em seguida, pode adicionar uma imagem ilustrativa (fotografia, ícone ou figura representativa) utilizando o componente de upload exibido na tela.</p>
+<p>Após a seleção da imagem, o usuário insere um texto descritivo do evento, que será exibido como anotação associada ao marcador temporal. Cada novo marco pode ser adicionado por meio do botão específico, sendo automaticamente posicionado na linha do tempo conforme sua data. A interface permite ainda editar ou excluir registros previamente inseridos, preservando a consistência dos dados apresentados.</p>
+<p>Durante o processo, o sistema executa validações básicas, como verificação de preenchimento mínimo, ordenação cronológica automática e vinculação dos arquivos de imagem ao identificador único de cada evento. Ao final, os marcos são salvos como parte permanente do cadastro da iniciativa.</p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>Em etapa de projeto no momento da publicação deste relatório.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>Em etapa de projeto no momento da publicação deste relatório.&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:3">
+<p>Está em etapa de desenho o protocolo para permitir que tais marcos e eventos possam ser disponibilizados, à critério dos membros da comunidade, à rede social, como uma postagem vinculada à iniciativa.&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+<li id="fn:4">
+<p>Processo ainda não automatizado. Em etapa de projeto no momento da publicação deste relatório técnico.&#160;<a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+</li>
+<li id="fn:5">
+<p>Processo ainda não automatizado. Em etapa de projeto no momento da publicação deste relatório técnico.&#160;<a class="footnote-backref" href="#fnref:5" title="Jump back to footnote 5 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
