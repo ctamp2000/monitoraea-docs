@@ -6,7 +6,9 @@ theme:
 nav:
   - Início (Versão Dez/2025): index.md
   - Arquitetura (Versão Dez/2025): arquitetura.md
-  - Módulos: modulos.md
+  - Módulos (Versão Dez/2025): modulos.md
+  - Fluxos (Versão Dez/2025): fluxos.md
+  - Governança (Versão Dez/2025): governanca.md
   - API: api.md
   - Banco de Dados: banco.md
   - Troubleshooting: troubleshooting.md
