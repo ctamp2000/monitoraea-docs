@@ -1,7 +1,5 @@
 # Arquitetura
 
-A arquitetura do sistema, suas tecnologias e integrações estão documentadas em:
-
 ## 📌 ARQUITETURA SÓCIOTÉCNICA
 
 ### 👉 Lógica de comunidades e estrutura colaborativa
@@ -14,7 +12,15 @@ Cada comunidade constitui uma unidade organizacional dinâmica dentro do sistema
 
 A Figura 1 ilustra esse processo de concepção modular e colaborativa, evidenciando como a lógica comunitária estrutura o ciclo de desenvolvimento do sistema. Essa metodologia assegura que o MonitoraEA evolua como um sistema vivo e adaptativo, no qual a arquitetura técnica reflete a organização social da própria rede de Educação Ambiental.
 
+![Figura 1 - ](img/figura1.png)
+
+**Figura 1 - Ciclo de concepção modular típica do Sistema MonitoraEA.**
+
 A partir da versão 2.01, o MonitoraEA passou a adotar um padrão de referência para a criação de comunidades voltadas ao cadastro, avaliação e monitoramento de iniciativas, definindo um conjunto base de funcionalidades ajustável a diferentes contextos territoriais e institucionais. Esta versão considera cinco funcionalidades básicas: i) formulário para a apresentação de informações cadastrais da iniciativa; ii) ferramenta webgis para a definição do polígono de representação da área de abrangência espacial da iniciativa; iii) formulários para autoavaliação da iniciativa, organizados por meio de dimensões de monitoramento e avaliação e indicadores a elas associados; iv) formulário para a descrição de parcerias e conexões institucionais realizadas pela iniciativa e; v) ferramenta de registro de eventos e marcos relevantes no ciclo de vida da iniciativa, em uma perspectiva cronológica (Linha do tempo da iniciativa). As funcionalidades (i) e (iii) variam entre as diversas perspectivas de monitoramento e avaliação do Sistema MonitoraEA. A figura 2 apresenta a organização das abas que permitem acessar estas cinco funcionalidades básicas dentro da área colaborativa das comunidades de M&A.
+
+![Figura 2 - ](img/figura2.png)
+
+**Figura 2 - Barra de abas da área colaborativa das comunidades de M&A do Sistema MonitoraEA.**
 
 A partir dessa base, a arquitetura do sistema organiza-se em módulos integrados que sustentam o ciclo completo de geração, integração, visualização e engajamento das comunidades, que será apresentado em mais detalhes na seção 4 deste relatório.
 
@@ -23,6 +29,10 @@ A partir dessa base, a arquitetura do sistema organiza-se em módulos integrados
 Além de sua organização modular de funcionalidades, o Sistema MonitoraEA se desdobra e se estrutura a partir de perspectivas de Monitoramento e Avaliação (M&A), que configuram diferentes camadas temáticas e institucionais de observação dentro do sistema. Essas perspectivas representam as múltiplas formas de atuação da Educação Ambiental no Brasil, compreendidas a partir do prisma das políticas públicas e das interfaces entre Estado, sociedade civil e territórios.
 
 Cada Perspectiva de M&A constitui um eixo estruturante do sistema, a partir do qual se organiza uma comunidade de gestão encarregada de orientar e articular os processos de monitoramento, definição de indicadores e produção descentralizada de dados em uma determinada dimensão da Educação Ambiental. Essas comunidades funcionam como núcleos temáticos de referência, a partir dos quais os usuários podem criar suas próprias comunidades de iniciativas, vinculadas à perspectiva escolhida. Essa vinculação assegura que cada comunidade opere com campos, indicadores e instrumentos específicos, coerentes com os referenciais metodológicos e analíticos da respectiva perspectiva. A figura 3 e o quadro 2 apresentam o panorama das perspectivas de M&A existentes e previstas para o MonitoraEA.
+
+![Figura 3 - ](img/figura3.png)
+
+**Figura 3 - Mapa de perspectivas de M&A do Sistema MonitoraEA.**
 
 **Quadro 2 – Principais Perspectivas Estruturadas no MonitoraEA**
 
@@ -39,7 +49,15 @@ Cada Perspectiva de M&A constitui um eixo estruturante do sistema, a partir do q
 
 Estas perspectivas formam uma rede de comunidades interdependentes, cuja interação viabiliza a construção colaborativa e descentralizada de dados e informações. Tal arranjo reflete a diversidade de práticas e atores do campo da Educação Ambiental, ao mesmo tempo em que reforça o papel do MonitoraEA como infraestrutura pública de governança adaptativa e de gestão integrada da informação socioambiental. A figura 4 apresenta o mapa geral de comunidades sob o qual se estrutura o planejamento de desenvolvimentos do Sistema MonitoraEA.
 
+![Figura 4 - ](img/figura4.png)
+
+**Figura 4 - Estruturação de comunidades do Sistema MonitoraEA**
+
 A figura 5 apresenta o detalhamento do mapa de aplicação de instrumentos de monitoramento e avaliação (M&A), considerando cada perspectiva e, para cada uma delas, das possibilidades de cadastro.
+
+![Figura 5 - ](img/figura5.png)
+
+**Figura 5 - Matriz de aplicação das diferentes tipologias de indicadores do Sistema MonitoraEA, por perspectiva.**
 
 ### 👉 Perfis de Usuários e Tipologias
 
@@ -300,6 +318,10 @@ A arquitetura lógica do MonitoraEA (Figura 6) organiza-se em camadas funcionais
 
 Essa arquitetura segue o modelo web distribuído, permitindo que diferentes módulos operem de forma integrada, porém desacoplada, garantindo resiliência e escalabilidade horizontal.
 
+![Figura 6 - ](img/figura6.png)
+
+**Figura 6 – Camadas constituintes do sistema MonitoraEA com detalhe para as escolhas tecnológicas e infraestrutura implementadas**
+
 ### 👉 Infraestrutura Tecnológica
 
 A infraestrutura de hospedagem e serviços foi dimensionada para atender à demanda crescente de usuários e operações simultâneas. O ambiente é composto por instâncias virtuais dedicadas à aplicação, banco de dados e serviços auxiliares, com gerenciamento de versões automatizado e pipelines contínuos de implantação (CI/CD[^2]). As principais características técnicas são apresentadas no quadro 6.
@@ -307,6 +329,16 @@ A infraestrutura de hospedagem e serviços foi dimensionada para atender à dema
 [^2]: Continuous Integration / Continuous Delivery ou Deployment
 
 **Quadro 6 – Matriz de funções e ferramentas**
+
+| Área / Procedimento                   | Função / Objetivo                                                                                                                 | Ferramentas / Tecnologias                                                                                                               |
+| ------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| Monitoramento (AWS CloudWatch)        | Coleta de métricas de desempenho, logs e alertas automáticos; visualização em tempo real do estado do sistema mobilização social. | AWS CloudWatch, dashboards de monitoramento                                                                                             |
+| Métricas Monitoradas                  | Acompanhar performance e identificar degradação                                                                                   | CPU, memória, disco, rede, latência, taxa de erro                                                                                       |
+| Logs Centralizados                    | Agregar logs de aplicação, acesso e auditoria                                                                                     | AWS CloudWatch Logs, sistemas de logging centralizados                                                                                  |
+| Alertas Automáticos                   | Notificar situações críticas e degradação de performance                                                                          | AWS CloudWatch Alarms, notificações automáticas                                                                                         |
+| Escalabilidade e Disponibilidade      | Garantir operação contínua e adaptável à demanda                                                                                  | Escalabilidade horizontal, balanceamento de carga, multi-AZ, auto-scaling, backup multi-regional                                        |
+| Procedimentos de Backup e Restauração | Preservar dados e permitir recuperação pontual                                                                                    | Backups automatizados, retenção configurável, versionamento incremental, testes de restauração, arquivamento de longo prazo             |
+| Ambiente de Homologação e Testes      | Validar sistemas antes da produção e garantir segurança                                                                           | Ambiente isolado, dados de teste, pipeline de implantação, testes automatizados, validação de segurança (vulnerabilidades e penetração) |
 
 A configuração atual assegura alta disponibilidade, rastreabilidade das operações e compatibilidade com padrões de interoperabilidade de dados públicos, atendendo aos requisitos de transparência e confiabilidade do sistema.
 
@@ -323,7 +355,9 @@ O ciclo de desenvolvimento do MonitoraEA (Figura 7) segue uma lógica de integra
 
 Esse modelo favorece a evolução incremental do sistema, reduz riscos de regressão e mantém a documentação técnica permanentemente sincronizada com o código e os ambientes operacionais.
 
-Figura 7 - Ciclo iterativo de desenvolvimento, suas fases e ambientes de implementação.
+![Figura 7 - ](img/figura7.png)
+
+**Figura 7 - Ciclo iterativo de desenvolvimento, suas fases e ambientes de implementação.**
 
 Do ponto de vista dos ambientes operacionais, o sistema opera a partir de 3 ambientes distintos:
 
@@ -341,7 +375,9 @@ O sistema de logs centralizado consolida logs de aplicação (debug, info, warn,
 
 Essa infraestrutura tecnológica integrada, combinando políticas rigorosas de backup, observabilidade detalhada e monitoramento contínuo, assegura que o MonitoraEA opere com confiabilidade, resiliência técnica e segurança, atendendo aos requisitos de uma plataforma nacional de dados em Educação Ambiental e em conformidade com boas práticas de gestão de sistemas distribuídos.
 
-Figura 8 - Opção da CloudWatch mostrando métricas das instâncias EC2.
+![Figura 8 - ](img/figura8.png)
+
+**Figura 8 - Opção da CloudWatch mostrando métricas das instâncias EC2.**
 
 ### 👉 Repositórios de Código e Versionamento
 
