@@ -14,6 +14,10 @@ nav:
   - Banco de Dados: banco.md
   - Troubleshooting: troubleshooting.md
   - Resultados (Versão Dez/2025): resultados.md
+  - Roadmap (Versão Dez/2025): roadmap.md
+  - Plano de Transferência (Versão Dez/2025): transferencia.md
+  - Questões Legais (Versão Dez/2025): questoeslegais.md
+  - Considerações Finais (Versão Dez/2025): consideracoes.md
   - Como Contribuir (versão Mai/2026): contribuicao.md
 
 markdown_extensions:
