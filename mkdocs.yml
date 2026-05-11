@@ -13,6 +13,7 @@ nav:
   - API: api.md
   - Banco de Dados: banco.md
   - Troubleshooting: troubleshooting.md
+  - Resultados (Versão Dez/2025): resultados.md
   - Como Contribuir (versão Mai/2026): contribuicao.md
 
 markdown_extensions:
