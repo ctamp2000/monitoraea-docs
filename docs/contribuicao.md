@@ -83,6 +83,12 @@ No terminal do VS Code:
 
 python -m mkdocs gh-deploy
 
+## 👀 Como executar na internet
+
+Digite o endereço do site no browser
+
+https://ctamp2000.github.io/monitoraea-docs/
+
 ## 🧭 Organização da documentação
 
 - Um arquivo por assunto
